@@ -12,31 +12,31 @@ toward that target.
 Usage
 -----
 
-  require 'derring-do'
-
-  # untargetted campaigns (with no specifical goal in mind)
-
-  derring do |campaign|
-    1000.times do
-      campaign.tally_ho!
-      sleep 0.2
+    require 'derring-do'
+  
+    # untargetted campaigns (with no specifical goal in mind)
+  
+    derring do |campaign|
+      1000.times do
+        campaign.tally_ho!
+        sleep 0.2
+      end
     end
-  end
-
-  # targetted campaigns (aiming for a particular goal)
-
-  derring do |campaign|
-    campaign.target = 2000
-    1000.times do
-      campaign.tally_ho! 2
-      sleep 0.2
+  
+    # targetted campaigns (aiming for a particular goal)
+  
+    derring do |campaign|
+      campaign.target = 2000
+      1000.times do
+        campaign.tally_ho! 2
+        sleep 0.2
+      end
     end
-  end
 
 Installation
 ------------
 
-  gem install derring-do
+    gem install derring-do
 
 Caveats
 -------
