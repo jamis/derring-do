@@ -11,7 +11,7 @@ spec = Gem::Specification.new do |s|
     s.summary = "The over-eager progress monitor."
     s.name = 'derring-do'
     s.version = "1.0.0"
-    s.add_development_dependency "rspec ~> 2.1.0"
+    s.add_development_dependency "rspec", "~> 2.1.0"
     s.files = FileList["README.markdown", "Rakefile", "lib/**/*.rb", "spec/**/*.rb", "examples/**/*.rb"].to_a
     s.description = "Derring-Do is a very eager progress monitor for console Ruby applications."
     s.author = "Jamis Buck"
